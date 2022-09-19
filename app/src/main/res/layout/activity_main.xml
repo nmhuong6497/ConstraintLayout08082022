@@ -7,66 +7,14 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/text_view1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:background="#2196F3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View 1"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:background="#5600BCD4"
-        android:textColor="#FF0000"
-        android:textSize="20sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 1" />
-
-    <TextView
-        app:layout_constraintEnd_toStartOf="@+id/text_view1"
-        app:layout_constraintBottom_toTopOf="@+id/text_view1"
-        android:background="#5600BCD4"
-        android:textColor="#FF0000"
-        android:textSize="20sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 1" />
-
-    <TextView
-        app:layout_constraintEnd_toStartOf="@+id/text_view1"
-        app:layout_constraintBottom_toTopOf="@+id/text_view1"
-        android:background="#5600BCD4"
-        android:textColor="#FF0000"
-        android:textSize="20sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 2" />
-
-    <TextView
-        app:layout_constraintStart_toEndOf="@+id/text_view1"
-        app:layout_constraintBottom_toTopOf="@+id/text_view1"
-        android:background="#5600BCD4"
-        android:textColor="#FF0000"
-        android:textSize="20sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 3" />
-
-    <TextView
-        app:layout_constraintEnd_toStartOf="@+id/text_view1"
-        app:layout_constraintTop_toBottomOf="@+id/text_view1"
-        android:background="#5600BCD4"
-        android:textColor="#FF0000"
-        android:textSize="20sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 4" />
-
-    <TextView
-        app:layout_constraintStart_toEndOf="@+id/text_view1"
-        app:layout_constraintTop_toBottomOf="@+id/text_view1"
-        android:background="#5600BCD4"
-        android:textColor="#FF0000"
-        android:textSize="20sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 5" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
