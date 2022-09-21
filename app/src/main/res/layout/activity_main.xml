@@ -6,13 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        app:layout_constraintDimensionRatio="875:1920"
-        android:src="@drawable/img_1"
+    <TextView
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:background="#f20"
+        android:id="@+id/text_view1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_view2"
+        android:textSize="30sp"
+        android:text="1"
+        app:layout_constraintHorizontal_weight="2"
         android:layout_width="0dp"
-        android:layout_height="300dp"/>
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintHorizontal_weight="1"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:background="#2196F3"
+        android:id="@+id/text_view2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_view1"
+        app:layout_constraintEnd_toStartOf="@+id/text_view3"
+        android:textSize="30sp"
+        android:text="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintHorizontal_weight="1"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:background="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/text_view3"
+        app:layout_constraintStart_toEndOf="@+id/text_view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30sp"
+        android:text="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
